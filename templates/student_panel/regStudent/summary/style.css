@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../../../Poppins/Poppins-Regular.ttf'); /* Add more formats if needed */
+}
+body {
+    display: grid;
+    background-color: #d5e5d5;
+    font-family: 'Poppins-Regular'; /* Apply the custom font to the body */
+    margin: 0%;
+    height: 100vh;
+    grid-template-columns: auto 1fr;
+}
+
+#sidebar {
+    background-color: #365f39; /* New background color for the sidebar */
+    padding: 5px 1em; /* Padding inside the sidebar */
+    height: 100vh; /* Full height of the body */
+    width: 250px; /* Fixed width of the sidebar */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align children horizontally */
+}
+#sidebar ul {
+    list-style: none;
+    padding-left: 0%;
+    margin: 0%;
+    width: 100%;
+    text-align: center;
+    margin: -15% 0 0 0;
+}
+#sidebar a {
+    color: #f0f0f0;
+    margin-bottom: 1em;
+    border-radius: .1em;
+    padding: .85em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.logo {
+    width: 100%; /* Ensure the image takes the full width of the nav */
+    max-width: 300px; /* Maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px;
+    margin-bottom: 130px; /* Space below the image */
+}
+
+#sidebar a:hover {
+    background-color: #79AC78; /* Slightly darker shade for the hover effect */
+    transform: translateY(-5px);
+}
+
+#darken {
+    background: #192c1a;
+}
+
+.summary {
+    /* background-color: #94b096; */
+    /* border-radius: 10px; */
+    margin: 0 auto 0;
+    width: 34.5vw;
+    height: 70vh;
+    /* box-shadow: 0 0 4px #192c1a; */
+    text-align: center;
+    
+}
+
+.summary #image {
+    border: 3px solid #192c1a;
+    border-radius: 10px;
+    margin: 4% auto 3%;
+    width: 85%;
+}
+
+.info {
+    color: #192c1a;
+    margin: 0 auto;
+    border: 2px solid #192c1a;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0 0 1px inset;
+}
+
+#data {
+    /* border: 1px solid blue; */
+    margin: 2.8% 3%;
+    text-align: left;
+    width: 90%;
+}
+
+#button {
+    background-color: #618264;
+    color: #fefefe;
+    border: none;
+    width: 20%;
+    height: 5%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 100%;
+    margin: 4% 0;
+}
+
+#button:hover {
+    background-color: #366c3a;
+}

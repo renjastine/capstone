@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../../Poppins/Poppins-Regular.ttf'); /* Add more formats if needed */
+}
+
+@media (max-width: 1249px){
+    #sidebar ul {
+        font-size: 1.2vw;
+    }
+}
+
+body {
+    display: grid;
+    background-color: #d5e5d5;
+    margin: 0;
+    font-family: 'Poppins-Regular'; /* Apply the custom font to the body */
+    height: 100vh; /* Ensure the body takes the full height of the viewport */
+}
+.content {
+    height: 100vh;
+    background-color: #d5e5d5;
+}
+#my_camera {
+    margin-bottom: 10px; 
+}
+
+#vid {
+    margin: 0;
+    padding: 0;
+    display: block;
+    border: 5px solid #618264;
+    border-radius: 30px;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+#results {
+    overflow: hidden;
+    align-items: center;
+
+}
+#save {
+    font-weight: bold;
+    color: #283929; /* Light text color */
+    background-color: #94b096;
+    border-color: #283929;
+    padding: 10px;
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Rounded corners for links */
+    margin-bottom: 10px; /* Space between links */
+    transition: background-color 0.3s;
+    width: 200px;
+    margin-left: 140px;
+}
+#retry {
+    display: block;
+    font-weight: bold;
+    color: #283929; /* Light text color */
+    background-color: #94b096;
+    border-color: #283929;
+    padding: 10px;
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Rounded corners for links */
+    margin-bottom: 10px; /* Space between links */
+    transition: background-color 0.3s;
+    width: 200px;
+    margin-left: 140px;
+}
+#proceed {
+    display: block;
+    font-weight: bold;
+    color: #283929; /* Light text color */
+    background-color: #94b096;
+    border-color: #283929;
+    padding: 10px;
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Rounded corners for links */
+    margin-bottom: 10px; /* Space between links */
+    transition: background-color 0.3s;
+    width: 200px;
+    margin-left: 140px;
+
+}
+#webcam {
+    border-radius: 30px;
+    border: 5px solid #618264;
+    position: absolute;
+    
+}
+
+form {
+    position: absolute;
+    top: 20vh;
+    left: 41vw;
+    height: 40vh;
+    width: 40vw;
+    border-radius: 30px;
+    display: grid;
+}
+
+#sidebar {
+    background-color: #365f39; /* New background color for the sidebar */
+    padding: 5px 1em; /* Padding inside the sidebar */
+    height: 100vh; /* Full height of the body */
+    width: 16.8%; /* Fixed width of the sidebar */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align children horizontally */
+}
+
+#sidebar ul {
+    list-style: none;
+    padding-left: 0%;
+    margin: 0%;
+    width: 100%;
+    text-align: center;
+    margin: 70% 0 0 0;
+}
+
+#sidebar a {
+    color: #f0f0f0;
+    margin-bottom: 1em;
+    border-radius: .1em;
+    padding: .85em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 1.2vw;
+}
+
+.logo {
+    width: 120%; /* Ensure the image takes the full width of the nav */
+    max-width: 21.5vw; /* Maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 2% 0 0 10%;
+}
+
+#sidebar a:hover {
+    background-color: #79AC78; /* Slightly darker shade for the hover effect */
+    transform: translateY(-5px);
+}
+
+#darken {
+    background: #192c1a;
+}
+
+.header {
+    font-family: 'Poppins-Regular';
+    font-weight: bold;
+    position: fixed;
+    color: #6b7c67;
+    top: 8.5%;
+    left: 41%;
+    width: 40%;
+    height: 11.6%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    font-size: 1.5vw;
+}

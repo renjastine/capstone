@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../Poppins/Poppins-Bold.ttf'); /* Add more formats if needed */
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../Poppins/Poppins-Regular.ttf'); /* Add more formats if needed */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    display: flex;
+    background: linear-gradient(270deg, #589b5c,#a5bbb1,#365f39);
+    background-size: 800% 800%;
+    font-family: 'Poppins-Bold'; /* Apply the custom font to the body */
+    overflow: hidden;
+    animation: gradient 15s ease infinite;
+}
+
+.bg {
+    margin: 5% auto;
+    width: 80vw;
+    height: 78vh;
+    display: flex;
+    border-radius: 30px;
+}
+
+.title { 
+    /* border: 1px solid red; */
+    border-radius: 20px 0 0 20px;
+    background-color: #365f39;
+    width: 50%;
+    height: 80vh;
+}
+
+#pa, #am {
+    font-size: 3vw;
+    font-weight: bolder;
+}
+
+#cs, #ifr {
+    font-size: 2vw;
+}
+
+h1 {
+    color: #fefefe;
+    height: 62%;
+    margin: 3% auto;
+    text-align: center;
+    padding: 7% 0;
+}
+
+.row{
+    margin: 0 auto;
+}
+
+form {
+    border-radius: 0 20px 20px 0;
+    background-color: #fefefe;
+    width: 50%;
+    height: 80vh;
+    padding: 12% 0;
+}
+
+.row {
+    height: 30px;
+    margin: 5%;
+}
+
+@media (max-width: 500px){
+    .row {
+        height: 20px;
+    }
+}
+
+#username, #password, #login {
+    border: 1px solid #aeaeaed1;
+    width: 49%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 2% 2% 2% 2%;
+    font-family: 'Poppins-Regular';
+    font-size: 1vw;
+}
+
+#login {
+    background-color: #365f39;
+    color: #fefefe;
+    padding: 2% 2% 2% 2%;
+    width: 49%;
+    font-family: 'Poppins-Bold';
+}
+
+#login:hover {
+    background-color: #589b5c;
+}
+
+form #err {
+    color: rgb(203, 0, 0);
+    text-align: center;
+}
+
+#text {
+    margin: 0 auto;
+    width: 47.5%;
+    font-weight: bold;
+    font-size: 2vw;
+    text-align: center;
+}
+
+img {
+    width: 25vw;
+    margin: 3% 0 0 3%;
+}
+
+
+
+

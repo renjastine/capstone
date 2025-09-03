@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../../../Poppins/Poppins-Regular.ttf'); /* Add more formats if needed */
+}
+body {
+    display: grid;
+    background-color: #d5e5d5;
+    font-family: 'Poppins-Regular'; /* Apply the custom font to the body */
+    margin: 0%;
+    height: 100vh;
+    grid-template-columns: auto 1fr;
+    overflow: hidden;
+}
+
+#sidebar {
+    background-color: #365f39; /* New background color for the sidebar */
+    padding: 5px 1em; /* Padding inside the sidebar */
+    height: 100vh; /* Full height of the body */
+    width: 250px; /* Fixed width of the sidebar */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align children horizontally */
+}
+#sidebar ul {
+    list-style: none;
+    padding-left: 0%;
+    margin: 0%;
+    width: 100%;
+    text-align: center;
+}
+#sidebar a {
+    color: #f0f0f0;
+    margin-bottom: 1em;
+    border-radius: .1em;
+    padding: .85em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.logo {
+    width: 100%; /* Ensure the image takes the full width of the nav */
+    max-width: 300px; /* Maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px;
+    margin-bottom: 170px; /* Space below the image */
+}
+
+#sidebar a:hover {
+    background-color: #79AC78; /* Slightly darker shade for the hover effect */
+    transform: translateY(-5px);
+}
+
+.wrapper {
+    width: 84vw;
+    height: 100vh;
+}
+
+h1 {
+    border-radius: 10px;
+    margin: 15% auto;
+    text-align: center;
+    width: 40%;
+    height: 40%;
+    padding-top: 7vh;
+}
+
+p {
+    margin: 0 auto;
+    width: 30vw;
+    height: 25vh;
+    font-size: 130%;
+    padding-top: 10%;
+}

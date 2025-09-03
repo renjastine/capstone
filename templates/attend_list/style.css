@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../Poppins/Poppins-Regular.ttf'); /* Add more formats if needed */
+}   
+
+@media (max-width: 1249px){
+    #sidebar ul {
+        font-size: 1.2vw;
+    }
+}
+body {
+    display: flex;
+    background-color: #d5e5d5;
+    font-family: 'Poppins-Regular'; /* Apply the custom font to the body */
+    margin: 0%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+#sidebar {
+    background-color: #365f39; /* New background color for the sidebar */
+    padding: 5px 1em; /* Padding inside the sidebar */
+    height: 100vh; /* Full height of the body */
+    width: 20%; /* Fixed width of the sidebar */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align children horizontally */
+    font-size: 1.2vw;
+}
+#sidebar ul {
+    list-style: none;
+    padding-left: 0%;
+    margin: 0%;
+    width: 100%;
+    text-align: center;
+    margin: 70% 0 0 0;
+}
+
+#sidebar a {
+    color: #f0f0f0;
+    margin-bottom: 1em;
+    border-radius: .1em;
+    padding: .85em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.logo {
+    width: 120%; /* Ensure the image takes the full width of the nav */
+    max-width: 21.5vw; /* Maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 2% 0 0 10%;
+}
+
+#sidebar a:hover {
+    background-color: #79AC78; /* Slightly darker shade for the hover effect */
+    transform: translateY(-5px);
+}
+
+#darken {
+    background: #192c1a;
+}
+
+header {
+    background-color: #6ea387;
+    width: 83.2vw;
+    height: 10%;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #fefefe;
+    padding-top: 1%;
+}
+
+.wrap { 
+    width: 100%;
+    height: 100vh;
+    max-width: 100vw;
+}
+
+header {
+    background-color: #6ea387;
+    height: 10%;
+    text-align: center;
+    font-size: 250%;
+    font-weight: bold;
+    padding-top: 1%;
+    color: #fefefe;
+    display: sticky;
+    font-size: 2.7vw;
+}
+
+.table {
+    background-color: #b0bdb0;
+    border: 3px solid #365f39;
+    border-radius: 1%;
+    margin: 1% auto 5%;
+    width: 70vw;
+    text-align: center;
+    height: 70vh;
+    overflow-y: auto;
+    font-size: 1.1vw;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: #365f39;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #00572c;
+    border-radius: 0 2px 2px 0;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #6ea387;
+    border-radius: 0 4px 4px 0;
+}
+
+.alternating-row-table tr:nth-child(odd) {
+  background-color: #b7dbc8; /* Light blue for odd rows */
+}
+
+.alternating-row-table tr:nth-child(even) {
+  background-color: #d2e5db; /* Slightly darker blue for even rows */
+}
+
+.alternating-row-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.filters {
+    margin-top: 3vh;
+    padding-inline: 6.5vw;
+}
+
+.filters select, input {
+    width: 7.2vw;
+    height: 4vh;
+    border-radius: 0.3vw;
+    padding-inline: 0.2vw;
+    font-size: 0.9vw;
+    margin-right: 0.1vw;
+    color: #fff;
+    background-color: #365f39;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
