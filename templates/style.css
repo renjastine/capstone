@@ -1,0 +1,476 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('./Poppins/Poppins-Regular.ttf'); /* Add more formats if needed */
+}   
+
+@media (max-width: 1249px){
+    #sidebar ul {
+        font-size: 1.2vw;
+    }
+}
+
+body {
+    display: flex;
+    background-color: #d5e5d5;
+    font-family: 'Poppins-Regular';
+    margin: 0%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+#sidebar {
+    background-color: #365f39;
+    padding: 5px 1em; 
+    height: 100vh; 
+    width: 20%; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#sidebar ul {
+    list-style: none;
+    padding-left: 0%;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin: 45% 0 0 0;
+}
+
+#sidebar a {
+    color: #f0f0f0;
+    margin-bottom: 1em;
+    border-radius: .1em;
+    padding: .85em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 1.2vw;
+}
+
+.logo {
+    width: 120%; /* Ensure the image takes the full width of the nav */
+    max-width: 21.5vw; /* Maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 2% 0 0 10%;
+}
+
+#sidebar a:hover {
+    background-color: #79AC78; /* Slightly darker shade for the hover effect */
+    transform: translateY(-5px);
+}
+
+#darken {
+    background: #192c1a;
+}
+
+header {
+    background-color: #6ea387;
+    width: 83.2vw;
+    height: 10%;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #fefefe;
+    padding-top: 1%;
+}
+
+.computer_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /*Increased gap between buttons */
+    width: 97%; /* Use the full available width */
+    height: 70%;
+    max-height: 130vh; /* Limit the height to fit within the viewport */
+    margin-top: 10vh; /* Space from the top */
+    margin-left: 20px; /* Space from the left (nav side) */
+    overflow-y: auto; /* Add vertical scrolling when needed */
+    padding: 5px 0 5px 5px; /* Add padding to the right to prevent scrollbar overlap */
+    /* border: 1px solid red; */
+    
+}
+
+.computer_list .button {
+    background-color: #365f39; 
+    color: #d5e5d5; 
+    padding: 1% 1%; 
+    font-size: 18px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    width: 30%; 
+    height: 25%;
+    box-sizing: border-box; 
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+}
+
+.computer_list .button .pcName{
+    background-color: #365f39;
+    margin: 0;
+    font-size: 2vw;
+    width: 9vw;
+    text-align: center;
+    padding-block: 4vh;
+    transition: background-color 0.3s, transform 5s;
+}
+
+.computer_list .button .comp_status{
+    line-height: 1vh;
+    padding-inline: 1vw;
+    padding-block: 1vh;
+    width: 11vw;
+    font-size: 0.7vw;
+}
+
+.computer_list .button .comp_status #hardware{
+    margin-bottom: 0.5vh;
+}
+
+.computer_list .button .comp_status span{
+    padding-right: 0.3vw;
+}
+
+[id^="status_light"], [id^= "cpu_temp_light"], #cpu_clock_light, #cpu_watts, [id^="hdd_temp_light"], [id^="hdd_used_light"]{
+    vertical-align: text-top;
+}   
+
+.wrap {
+    width: 100%;
+}
+
+#formRegComp { 
+    font-family: 'Poppins-Regular'; /* Apply the custom font to the body */
+    text-align: center;
+    background-color: #fefefe;
+    width: 30%;
+    margin: 6% auto;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    border-radius: 15px;
+}
+
+.row {
+    text-align: left;
+    margin: 2% auto 4%;
+    width: 80%;
+    height: 10vh;
+}
+
+.row input {
+    width: 96%;
+    height: 50%;
+    border-radius: 5px;
+    border: none;
+    background-color: #cfcfcfa1;
+    padding-left: 10px;
+    margin: 0 0 10% 0;
+}
+
+.row label {
+    font-size: 90%;
+}
+
+#reg {
+    width: 79.5%;
+    height: 5vh;
+    background-color: #589b5c;
+    border: none;
+    color: #fefefe;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#reg:hover {
+    background-color: #78bd7d;
+    transition: background-color 0.3;
+}
+
+#msg {
+    color: red;
+    width: 80%;
+    margin: 5% auto;
+}
+
+.sl_table {
+    background-color: #b0bdb0;
+    border: 3px solid #365f39;
+    border-radius: 1%;
+    margin: 5vh auto;
+    width: 70vw;
+    text-align: center;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.sl_table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sl_table table th {
+    position: sticky;
+    top: 0;
+    background-color: #365f39;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+.sl_table table #info{
+    cursor: pointer;
+}
+
+.sl_table table #info:hover{
+    background-color: #fff;
+    transition: background-color 0.3;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #00572c;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #6ea387;
+    border-radius: 10px;
+}
+
+.alternating-row-table tr:nth-child(odd) {
+    background-color: #b7dbc8; /* Light blue for odd rows */
+}
+  
+.alternating-row-table tr:nth-child(even) {
+background-color: #d2e5db; /* Slightly darker blue for even rows */
+}
+
+.alternating-row-table {
+border-collapse: collapse;
+width: 100%;
+}
+
+#formSearch {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#formSearch input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+#formSearch button, .btn button {
+    padding: 10px 20px;
+    background-color: #365f39;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formSearch button:hover {
+    background-color: #79AC78;
+}
+
+#notFound {
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+
+.info {
+    width: 50vw;
+    margin: 0 auto;    
+}
+
+.info ol {
+    list-style-type: none;
+    padding: 0;
+    width: 50%;
+    margin: 5% auto 0;
+}
+
+.info ol li {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.info li .label {
+    width:  6.5vw;
+    padding: 1.5% 0 0 1%;
+}
+
+.info li .input {
+    width: 60%;
+}
+
+.info li .input input {
+    width: 95%;
+    padding: 4% 3% 4%;
+    font-size: 1vw;
+}
+
+.info li .input select {
+    width: 4vw;
+    height: 4vh;
+    padding-left: 2%;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn button {
+    padding: 10px 20px;
+    margin: 10px 2%;
+    cursor: pointer;
+    border: none;
+}
+
+.wrap .options{
+    margin-top: 8vh;
+    padding-block: 2vh;
+    padding-left: 29vw;
+    display: flex;
+}
+
+.options select, .options button{
+    border: none;
+    background-color: #365f39;
+    color: #fff;
+    height: 4vh;
+    border-radius: 0.5vw;
+    padding-inline: 1vw;
+    margin-right: 0.5vw;
+    font-size: 1vw;
+}
+
+.options button {
+    width: 10vw;
+    height: 4.1vh;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.options button:hover{
+    background-color: #79ac78;
+    box-shadow: 0 0.5vh 3vh rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.wrap .analysis {
+    height: 60vh;
+    width: 80vw;
+    margin: 0 auto 0;
+}
+
+.analysis .ts {
+    width: 50vw;
+    height: 60vh;
+    margin: 0 auto;
+}
+
+.ts .graph {
+    background-color: #365f39;
+    border-radius: 0.5vw;
+    box-shadow: 0 0 2vw rgba(0,0,0,0.3);
+    height: 54.5vh;
+}
+
+.ts .details {
+    display: flex;
+    height: 3vh;
+    padding-block: 1vh;
+    
+}
+.details .r {
+    font-size: 0.8vw;
+    margin-right: 1vw;
+}
+
+.loader {
+    border-radius: 50%;
+    border: 5px solid #365f39;
+    border-top: 5px solid #d5e5d5;
+    border-bottom: 5px solid #d5e5d5;
+    width: 1.3vw;
+    height: 1.3vw;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.graph #message {
+    text-align: center;
+    font-size: 2vw;
+    padding-block: 10vh;
+    height: 10vh;
+    color: #fff;
+}
+.computer, .student {
+    list-style: none;
+    padding-left: 0%;
+    margin: 0%;
+    width: 100%;
+    text-align: center;
+}
+
+.wrap .computer {
+    margin-top: 10vh;
+}
+
+.computer {
+    margin: 0 auto;
+    width: 60vw;
+    height: 70vh;
+}
+
+.comp_row {
+    height: 35vh;
+    display: flex;
+    padding-inline: 12.2vw;
+}
+
+.comp_row .pc, .stud{
+    background-color: #4b854f;
+    border-radius: 0.5vw;
+    width: 13vw;
+    height: 30vh;
+    margin-left: 3.5vw;
+    box-shadow: 0 0 3vw inset rgba(25, 44, 26, 0.2);
+}
+
+.comp_row img{
+    width: 7vw;
+    margin: 2.5vh 0;
+}
+
+.computer a{
+    padding: 1vh 0;
+    border: 0.2vw solid white;
+    color: white; 
+    text-decoration: none; 
+    border-radius: 1.5vw; 
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
+    width: 10vw;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.computer a:hover {
+    background-color: #fff;
+    color: #365f39;
+}
